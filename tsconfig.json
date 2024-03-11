@@ -1,0 +1,40 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    /* Type Checking */
+    "allowUnreachableCode": false,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+
+    /* Emit */
+    "declaration": true,
+    "newLine": "lf",
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+
+    /* JavaScript Support */
+    "allowJs": false,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+
+    /* Language and Environment */
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "ES2020",
+
+    /* Completeness */
+    "skipLibCheck": true
+  }
+}
