@@ -1,6 +1,7 @@
-# VSCode-Jest bug
+# Stencil-Jest bug
 
 Reproduction for https://github.com/jest-community/vscode-jest/issues/1124
+Caused by Stencil incorrectly parsing CLI arguments. See https://github.com/ionic-team/stencil/issues/5640
 
 ## Steps
 
@@ -31,23 +32,6 @@ On 1st run it will work fine
 On the 2nd run, it will be stuck forever
 
 Restarting VS Code repeats this cycle - works on 1st run, stuck on 2nd
-
-## Possible cause and Workaround?
-
-I noticed that changing this setting in
-[./.vscode/settings.json](./.vscode/settings.json) from
-
-```yaml
-  "jest.jestCommandLine": "yarn test",
-```
-
-to
-
-```yaml
-  "jest.jestCommandLine": "npm run test",
-```
-
-Resolves the issue - could it be something with Yarn then?
 
 ## Additional
 
